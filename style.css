@@ -1,0 +1,481 @@
+@font-face {
+    font-family: Fira Code;
+    src: url(fonts/FiraCode.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat.ttf);
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.content-grid {
+    padding-left: 8.6%;
+    padding-right: 8.6%;
+}
+
+.org-logo {
+    margin-left: 24px;
+}
+
+.report-button {
+    margin-left: auto;
+    height: 55%;
+}
+
+.content-0 {
+    background-color: #004A8E;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.content-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 112px;
+}
+
+.content-2 {
+    background-color: #535353;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer {
+    background-color: #1E1F23;
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.footer-logo-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.z-footer-logo {
+    float: right;
+}
+
+.footer-text-section {
+    margin-top: 65px;
+}
+
+.footer-text {
+    color: white;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.footer-text-link {
+    color: #150A94;
+}
+
+.footer-bottom-text {
+    margin-top: 40px;
+}
+
+.arial-font {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fira-code-font {
+    font-family: Fira Code;
+}
+
+.montserrat-font {
+    font-family: Fira Code;
+}
+
+.stat-section {
+    display: flex;
+    align-items: center;
+}
+
+.stat-text {
+    color: white;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 400;
+    margin-left: 32px;
+}
+
+.question-section {
+    margin-top: 56px;
+}
+
+.question-text {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex: 40%;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
+}
+
+.card-1 {
+    margin-right: 56px;
+}
+
+.card-text-section {
+    padding: 20px 24px;
+    background-color: white;
+}
+
+.card-image {
+    width: 100%;
+    margin-top: auto;
+}
+
+.form-detail-text-section {
+    flex: 50%;
+    margin-right: 100px;
+    margin-top: 100px;
+}
+
+.form-section {
+    flex: 50%;
+    margin-top: 56px;
+    background-color: white;
+    padding: 24px;
+    font-family: Fira Code;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
+    margin-bottom: 56px;
+}
+
+.form-detail-text-report {
+    color: white;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+.form-detail-text-details-section {
+    margin-top: 40px;
+}
+
+.form-detail-text-details-text {
+    color: white;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.form-label {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 16px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #2729371F;
+    color: rgba(39, 41, 55, 0.35);
+    padding: 14px 20px;
+    margin-top: 24px;
+    border: 1px solid rgba(39, 41, 55, 0.12);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.red-line-lg {
+    height: 16px;
+    width: 125px;
+    background-color: #E41912;
+    margin-top: 48px;
+}
+
+.what-is-next-section {
+    margin-top: 112px;
+}
+
+.what-is-next-question-text {
+    color: balxk;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+}
+
+.what-is-next-details-section {
+    margin-top: 32px;
+}
+
+.what-is-next-details-text {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.what-is-next-cards-section {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 150px;
+}
+
+.what-is-next-card {
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
+    margin-right: 16px;
+    flex: 33%;
+    padding: 24px 32px;
+}
+
+.last-card {
+    margin-right: 0;
+}
+
+.what-is-next-card-text, .what-is-next-card-text-lg {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.web-fsb-image {
+    float: right;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+  
+.sticky + .content {
+    padding-top: 102px;
+}
+
+.clickable-card:hover {
+    cursor: pointer;
+}
+
+#report-about-tailor-button {
+    text-transform: uppercase;
+    float: right;
+    height: 100%;
+    width: 100%;
+    text-decoration: underline;
+    border-radius: 8px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #E41912;
+}
+
+@media screen and (min-width: 601px) {
+    .card-text-section {
+        overflow-x: scroll;
+    }
+
+    .red-line-sm {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1301px) {
+    .what-is-next-card-text-sm {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1300px) {
+    .what-is-next-section {
+        margin-top: 48px;
+    }
+
+    .what-is-next-question-text {
+        font-size: 24px;
+    }
+
+    .what-is-next-details-text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .what-is-next-cards-section {
+        margin-top: 24px;
+        flex-direction: column;
+    }
+
+    .what-is-next-card {
+        margin-bottom: 2vh;
+        margin-right: 0;
+        min-height: 126px;
+        display: inline-block;
+    }
+
+    .what-is-next-card-text, .what-is-next-card-text-sm {
+        font-size: 18px;
+    }
+
+    .what-is-next-card-text-lg {
+        display: none;
+    }
+
+    .what-is-next-cards-section {
+        margin-bottom: 48px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .content-grid {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .content-0 { 
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    .content-1 { 
+        flex-direction: column;
+        padding-bottom: 60px;
+    }
+
+    .content-2 {
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 100%;
+        margin-bottom: 4vh;
+    }
+
+    .card-1 {
+        margin-right: 0;
+    }
+    
+    .stat-text {
+        font-size: 16px;
+    }
+
+    .question-text {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .form-detail-text-report {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .form-detail-text-section {
+        flex: 100%;
+        margin-right: 0;
+        margin-top: 2vh;
+    }
+
+    .form-detail-text-details-text {
+        flex: 100%;
+        line-height: 22px;
+        font-size: 16px;
+    }
+
+    .red-line-lg {
+        display: none;
+    }
+
+    .red-line-sm {
+        width: 25vw;
+        margin-bottom: 40px;
+    }
+
+    .form-label {
+        font-size: 12px;
+    }
+
+    .form-section {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    input[type=text], textarea {
+        font-size: 10px !important;
+    }
+    
+    input[type=submit] {
+        font-size: 12px;
+        height: 6vh;
+        padding: 1.5vh 20px;
+        margin-top: 12px;
+        border-radius: 5px;
+    }
+
+    .footer {
+        padding-top: 24px;
+        padding-bottom: 40px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .footer-bottom-text {
+        margin-top: 40px;
+    }
+
+    .footer-logo {
+        width: 50%;
+    }
+    
+    .z-footer-logo {
+        width: 10%;
+    }
+
+    .org-logo {
+        margin-left: 0;
+        margin-right: 24px;
+    }
+
+    .report-button {
+        flex: 20%;
+        height: 50%;
+    }
+
+    #report-about-tailor-button {
+        font-size: 9px !important;
+        border-radius: 8px;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .header { 
+        height: 80px;
+        position: sticky;
+    }
+}

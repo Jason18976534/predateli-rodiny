@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Чужой Среди Своих</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+  </head>
+  <body>
+    <header id="header" class="header content-grid">
+        <div class="z-logo">
+            <image class="w-100" src="images/z-title.svg">
+        </div>
+        <div class="org-logo">
+            <image class="w-100" src="images/logo.svg">
+        </div>
+        <div class="report-button">
+            <a href="#form-section"><button class="btn btn-danger" id="report-about-tailor-button">cообщить о предателе</button></a>
+        </div>       
+    </header>
+    <section class="content-0 content-grid">
+        <div class="stat-section">
+            <image src="images/flag.svg">
+            <span class="arial-font stat-text">“Более 80% россиян поддерживают СВО и Президента!”</span>
+        </div>
+        <div class="question-section">
+            <h1 class="arial-font question-text">Почему тогда мы не видим толпы у военкоматов, а желающих защищать Родину приходится отлавливать на улицах?</h1>
+        </div>
+    </section>
+    <section class="content-1 content-grid">
+        <div class="card card-1">
+            <div class="card-text-section">
+                <span class="fira-code-font">- У нас серьезные внешние враги — США, НАТО и их украинские марионетки. В такой ситуации мы не можем позволить себе иметь пятую колонну.</span>
+            </div>
+            <image class="card-image" src="images/card-1-image.svg">
+        </div>
+        <div class="card card-2">
+            <div class="card-text-section">
+                <span class="fira-code-font">Большинство готово сражаться только сидя на диванах. Наши братья и сыновья проливают кровь, пока кто-то отсиживается на хороших должностях и зарплатах в тылу.</span>
+            </div>
+            <div>
+                <image class="card-image" src="images/card-2-image.svg">
+            </div>
+        </div>
+    </section>
+    <section class="content-2 content-grid" id="form-section">
+        <div class="form-detail-text-section">
+            <h1 class="arial-font form-detail-text-report">Расскажите анонимно про каждого предателя! </h1>
+            <div class="form-detail-text-details-section">
+                <span class="fira-code-font form-detail-text-details-text">Они есть среди депутатов, пропагандистов, властей регионов, и даже военных. Возможно, это даже кто-то из вашего окружения.</span>
+            </div>
+            <div class="red-line-lg"></div>
+        </div>
+        <div class="form-section">
+            <form onsubmit="return sendEmail()" onkeyup="success()">
+                <label class="form-label" for="fio">ФИО</label>
+                <input type="text" id="fio" name="fio"  placeholder="Введите текст..." required>
+            
+                <label class="form-label" for="position">Должность</label>
+                <input type="text" id="position" name="position" placeholder="Введите текст..." required>
+
+                <label class="form-label" for="action">Что конкретно он/она делает или не делает?</label>
+                <textarea type="text" id="action" name="action" placeholder="Введите текст..." required></textarea>
+
+                <label class="form-label" for="contactInfo">Его/ее сайт, страница в соцсети, мобильный номер</label>
+                <textarea type="text" id="contactInfo" name="contactInfo" placeholder="Введите текст..." required></textarea>
+              
+                <input type="submit" id="form-submit" value="Отправить">
+              </form>
+        </div>
+        <div class="red-line-sm"></div>
+    </section>
+    <section class="content-3 content-grid">
+        <div class="what-is-next-section">
+            <h1 class="arial-font what-is-next-question-text">Что еще можно сделать?</h1>
+        </div>
+        <div class="what-is-next-details-section">
+            <span class="fira-code-font what-is-next-details-text">Не только мы можем выслушать вас. Призывайте предателей к ответу, сообщив о них в соответствующие органы.</span>
+        </div>
+        <div class="what-is-next-cards-section">
+            <div class="what-is-next-card clickable-card" onclick="location.href='http://www.fsb.ru/fsb/webreception.htm';">
+                <div class="fira-code-font what-is-next-card-text-lg">Веб-приемная ФСБ</div>
+                <span class="fira-code-font what-is-next-card-text-sm">Веб-приемная ФСБ</span>
+                <image class="web-fsb-image" src="images/web-fsb.svg">
+            </div>
+            <div class="what-is-next-card">
+                <div class="fira-code-font what-is-next-card-text">Департамент военной контрразведки ФСБ <a href="http://www.fsb.ru/fsb/webreception.htm">uvkrfsb.ru</a></div>
+            </div>
+            <div class="what-is-next-card last-card">
+                <div class="fira-code-font what-is-next-card-text">Телефон доверия ФСБ:<br>
+                    8 (495) 224-22-22, <br>
+                    8 (916) 240-24-84 (смс)
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer content-grid">
+        <div class="footer-logo-section">
+            <div class="footer-logo">
+                <image class="w-100" src="images/footer-logo.svg">
+            </div>
+            <div class="z-footer-logo">
+                <image class="w-100" src="images/z-footer-logo.svg">
+            </div>
+        </div>
+        <div class="footer-text-section montserrat-font">
+            <div class="footer-text">
+                <span>© Общероссийский народный фронт, 2023. Все права защищены и применяется <span class="footer-text-link">Политика конфиденциальности персональных данных</span></span>
+            </div>
+            <div class="footer-text footer-bottom-text">
+                <span>Сетевая инициатива «Информационный ресурс Общероссийского народного фронта»</span><br>
+                <span>Свидетельство о регистрации ЭЛ № ФС 77 – 68368, выдано Роскомнадзором 30 декабря 2016 г.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script src="index.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
